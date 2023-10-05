@@ -1,0 +1,504 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Atmosphere Living</title>
+    <link rel="shortcut icon" href="assets/images/icon/favicon.png" type="image/x-icon" />    
+
+    <!-- Public Sans Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fontello.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <div class="atmosphere-dashboard">
+        <div class="atmosphere-wrapper">
+            <div class="atmoshphere-sidebar z-1 w-100 smooth position-fixed start-0 top-0 bottom-0">
+                <div class="sidebar-wrap h-100">
+                    <div class="atmosphere-logo text-center px-1">
+                        <img src="images/white-logo-circle.svg" alt="Atmosphoere" title="Atmosphoere">
+                    </div>
+                    <div class="atmosphere-sidebar-navs py-4">
+                        <nav class="navbar">
+                            <small class="text-white opacity-50 text-uppercase mb-2">Menu</small>
+                            <ul class="navbar-nav w-100">
+                                <li class="nav-item">
+                                <a type="button" class="nav-link smooth active" href="index.html"><i class="demo-icon icon-vcard"></i><span>Dashboard</span></a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a type="button" class="nav-link smooth dropdown-toggle" type="button" data-bs-toggle="dropdown"><i class="demo-icon icon-users"></i><span>User Management</span></a>
+                                    <ul class="dropdown-menu border-0">
+                                        <li><a type="button" class="dropdown-item active" href="list-of-users.html">List of Users</a></li>
+                                        <li><a type="button" class="dropdown-item" href="manage-roles.html">Manage Roles</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link smooth dropdown-toggle" type="button" data-bs-toggle="dropdown"><i class="demo-icon icon-home"></i><span>Manage Projects</span></a>
+                                    <ul class="dropdown-menu border-0">
+                                        <li><a class="dropdown-item" href="properties-list.html">List of Projects</a></li>
+                                        <li><a class="dropdown-item" href="all-units.html">All Units</a></li>
+                                        <li><a class="dropdown-item" href="manage-amenities.html">Manage Amenities</a></li>
+                                        <li><a class="dropdown-item" href="payment-plans.html">Payment Plans</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                <a class="nav-link smooth" href="bookings.html"><i class="demo-icon icon-book"></i><span>Bookings</span></a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link smooth dropdown-toggle" type="button" data-bs-toggle="dropdown"><i class="demo-icon icon-users"></i><span>Customers</span></a>
+                                    <ul class="dropdown-menu border-0">
+                                        <li><a class="dropdown-item" href="web-customers.html">Web Customers</a></li>
+                                        <li><a class="dropdown-item" href="owners.html">Owners</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link smooth" href="site-visits.html"><i class="demo-icon icon-012_location"></i><span>Site Visits</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link smooth" href="transactions.html"><i class="demo-icon icon-refresh"></i><span>Transactions</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link smooth" href="policies.html"><i class="demo-icon icon-doc-text"></i><span>Policies</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link smooth" href="masters.html"><i class="demo-icon icon-user"></i><span>Masters</span></a>
+                                </li>
+                            </ul>
+                          </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="atmosphere-content smooth">
+                <div class="atmosphere-header d-flex align-items-center justify-content-between">
+                    <div class="humburger">
+                        <a class="sidebar-toggle btn btn-primary bg-transparent border-white rounded-2 d-flex align-items-center justify-content-center p-2">
+                            <i class="m-0 w-auto demo-icon icon-menu"></i>
+                        </a>
+                    </div>
+                    <!-- /humburger -->
+                    <div class="right-top-header d-flex align-items-center justify-content-end">
+                        <div class="notifications me-4">
+                            <div class="dropdown">
+                                <a class="text-white text-decoration-none dropdown-toggle h5 m-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  <i class="demo-icon icon-mail"></i>
+                                </a>
+                                <div class="dropdown-menu end-0">
+                                    <ul class="notification-list list-unstyled m-0 p-0">
+                                    <li>
+                                        <div class="notification-wrap py-3 px-3 d-flex align-items-start">
+                                            <div class="notify-icon">
+                                                <span class="avatar rounded-pill w-100 d-flex align-items-center justify-content-center">
+                                                    <i class="demo-icon icon-mail"></i>
+                                                </span>
+                                                <div class="notify-date-time">
+                                                    
+                                                </div>
+                                            </div>
+                                            <div class="notify-text">
+                                                <p class="mb-0 fw-semibold">
+                                                    <a class="text-decoration-none text-dark" href="#">Your Order Has Been Shipped</a>
+                                                </p>
+                                                <span class="text-muted fw-normal fs-12 header-notification-text">Order No: 123456 Has Shipped To Your Delivery Address</span>
+                                                <div class="notify-date-time w-100 mt-2 text-end text-muted opacity-75">
+                                                    5 min ago
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="notification-wrap py-3 px-3 d-flex align-items-start">
+                                            <div class="notify-icon">
+                                                <span class="avatar rounded-pill w-100 d-flex align-items-center justify-content-center">
+                                                    <i class="demo-icon icon-mail"></i>
+                                                </span>
+                                            </div>
+                                            <div class="notify-text">
+                                                <p class="mb-0 fw-semibold">
+                                                    <a class="text-decoration-none text-dark" href="#">Your Order Has Been Shipped</a>
+                                                </p>
+                                                <span class="text-muted fw-normal fs-12 header-notification-text">Order No: 123456 Has Shipped To Your Delivery Address</span>
+                                                <div class="notify-date-time w-100 mt-2 text-end text-muted opacity-75">
+                                                    5 min ago
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="notification-wrap py-3 px-3 d-flex align-items-start">
+                                            <div class="notify-icon">
+                                                <span class="avatar rounded-pill w-100 d-flex align-items-center justify-content-center">
+                                                    <i class="demo-icon icon-mail"></i>
+                                                </span>
+                                            </div>
+                                            <div class="notify-text">
+                                                <p class="mb-0 fw-semibold">
+                                                    <a class="text-decoration-none text-dark" href="#">Your Order Has Been Shipped</a>
+                                                </p>
+                                                <span class="text-muted fw-normal fs-12 header-notification-text">Order No: 123456 Has Shipped To Your Delivery Address</span>
+                                                <div class="notify-date-time w-100 mt-2 text-end text-muted opacity-75">
+                                                    5 min ago
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="notification-wrap py-3 px-3 d-flex align-items-start">
+                                            <div class="notify-icon">
+                                                <span class="avatar rounded-pill w-100 d-flex align-items-center justify-content-center">
+                                                    <i class="demo-icon icon-mail"></i>
+                                                </span>
+                                            </div>
+                                            <div class="notify-text">
+                                                <p class="mb-0 fw-semibold">
+                                                    <a class="text-decoration-none text-dark" href="#">Your Order Has Been Shipped</a>
+                                                </p>
+                                                <span class="text-muted fw-normal fs-12 header-notification-text">Order No: 123456 Has Shipped To Your Delivery Address</span>
+                                                <div class="notify-date-time w-100 mt-2 text-end text-muted opacity-75">
+                                                    5 min ago
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="notification-wrap py-3 px-3 d-flex align-items-start">
+                                            <div class="notify-icon">
+                                                <span class="avatar rounded-pill w-100 d-flex align-items-center justify-content-center">
+                                                    <i class="demo-icon icon-mail"></i>
+                                                </span>
+                                            </div>
+                                            <div class="notify-text">
+                                                <p class="mb-0 fw-semibold">
+                                                    <a class="text-decoration-none text-dark" href="#">Your Order Has Been Shipped</a>
+                                                </p>
+                                                <span class="text-muted fw-normal fs-12 header-notification-text">Order No: 123456 Has Shipped To Your Delivery Address</span>
+                                                <div class="notify-date-time w-100 mt-2 text-end text-muted opacity-75">
+                                                    5 min ago
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="notification-wrap py-3 px-3 d-flex align-items-start">
+                                            <div class="notify-icon">
+                                                <span class="avatar rounded-pill w-100 d-flex align-items-center justify-content-center">
+                                                    <i class="demo-icon icon-mail"></i>
+                                                </span>
+                                            </div>
+                                            <div class="notify-text">
+                                                <p class="mb-0 fw-semibold">
+                                                    <a class="text-decoration-none text-dark" href="#">Your Order Has Been Shipped</a>
+                                                </p>
+                                                <span class="text-muted fw-normal fs-12 header-notification-text">Order No: 123456 Has Shipped To Your Delivery Address</span>
+                                                <div class="notify-date-time w-100 mt-2 text-end text-muted opacity-75">
+                                                    5 min ago
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="notification-wrap py-3 px-3 d-flex align-items-start">
+                                            <div class="notify-icon">
+                                                <span class="avatar rounded-pill w-100 d-flex align-items-center justify-content-center">
+                                                    <i class="demo-icon icon-mail"></i>
+                                                </span>
+                                            </div>
+                                            <div class="notify-text">
+                                                <p class="mb-0 fw-semibold">
+                                                    <a class="text-decoration-none text-dark" href="#">Your Order Has Been Shipped</a>
+                                                </p>
+                                                <span class="text-muted fw-normal fs-12 header-notification-text">Order No: 123456 Has Shipped To Your Delivery Address</span>
+                                                <div class="notify-date-time w-100 mt-2 text-end text-muted opacity-75">
+                                                    5 min ago
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    </ul>
+                                <div class="view-all-notify border-top p-3">
+                                    <a class="btn btn-primary atmosphere-btn rounded-1 w-100 text-uppercase text-md" href="#">View All</a>
+                                </div>
+                            </div>
+                              </div>
+                        </div>
+                        <div class="notifications me-4">
+                            <div class="dropdown">
+                                <a class="text-white text-decoration-none dropdown-toggle h5 m-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  <i class="demo-icon icon-bell"></i>
+                                </a>
+                                <div class="dropdown-menu end-0">
+                                    <ul class="notification-list list-unstyled m-0 p-0">
+                                    <li>
+                                        <div class="notification-wrap py-3 px-3 d-flex align-items-start">
+                                            <div class="notify-icon">
+                                                <span class="avatar rounded-pill w-100 d-flex align-items-center justify-content-center">
+                                                    <i class="demo-icon icon-tag"></i>
+                                                </span>
+                                            </div>
+                                            <div class="notify-text">
+                                                <p class="mb-0 fw-semibold">
+                                                    <a class="text-decoration-none text-dark" href="#">Your Order Has Been Shipped</a>
+                                                </p>
+                                                <span class="text-muted fw-normal fs-12 header-notification-text">Order No: 123456 Has Shipped To Your Delivery Address</span>
+                                                <div class="notify-date-time w-100 mt-2 text-end text-muted opacity-75">
+                                                    5 min ago
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="notification-wrap py-3 px-3 d-flex align-items-start">
+                                            <div class="notify-icon">
+                                                <span class="avatar rounded-pill w-100 d-flex align-items-center justify-content-center">
+                                                    <i class="demo-icon icon-tag"></i>
+                                                </span>
+                                            </div>
+                                            <div class="notify-text">
+                                                <p class="mb-0 fw-semibold">
+                                                    <a class="text-decoration-none text-dark" href="#">Your Order Has Been Shipped</a>
+                                                </p>
+                                                <span class="text-muted fw-normal fs-12 header-notification-text">Order No: 123456 Has Shipped To Your Delivery Address</span>
+                                                <div class="notify-date-time w-100 mt-2 text-end text-muted opacity-75">
+                                                    5 min ago
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="notification-wrap py-3 px-3 d-flex align-items-start">
+                                            <div class="notify-icon">
+                                                <span class="avatar rounded-pill w-100 d-flex align-items-center justify-content-center">
+                                                    <i class="demo-icon icon-tag"></i>
+                                                </span>
+                                            </div>
+                                            <div class="notify-text">
+                                                <p class="mb-0 fw-semibold">
+                                                    <a class="text-decoration-none text-dark" href="#">Your Order Has Been Shipped</a>
+                                                </p>
+                                                <span class="text-muted fw-normal fs-12 header-notification-text">Order No: 123456 Has Shipped To Your Delivery Address</span>
+                                                <div class="notify-date-time w-100 mt-2 text-end text-muted opacity-75">
+                                                    5 min ago
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="notification-wrap py-3 px-3 d-flex align-items-start">
+                                            <div class="notify-icon">
+                                                <span class="avatar rounded-pill w-100 d-flex align-items-center justify-content-center">
+                                                    <i class="demo-icon icon-tag"></i>
+                                                </span>
+                                            </div>
+                                            <div class="notify-text">
+                                                <p class="mb-0 fw-semibold">
+                                                    <a class="text-decoration-none text-dark" href="#">Your Order Has Been Shipped</a>
+                                                </p>
+                                                <span class="text-muted fw-normal fs-12 header-notification-text">Order No: 123456 Has Shipped To Your Delivery Address</span>
+                                                <div class="notify-date-time w-100 mt-2 text-end text-muted opacity-75">
+                                                    5 min ago
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="notification-wrap py-3 px-3 d-flex align-items-start">
+                                            <div class="notify-icon">
+                                                <span class="avatar rounded-pill w-100 d-flex align-items-center justify-content-center">
+                                                    <i class="demo-icon icon-tag"></i>
+                                                </span>
+                                            </div>
+                                            <div class="notify-text">
+                                                <p class="mb-0 fw-semibold">
+                                                    <a class="text-decoration-none text-dark" href="#">Your Order Has Been Shipped</a>
+                                                </p>
+                                                <span class="text-muted fw-normal fs-12 header-notification-text">Order No: 123456 Has Shipped To Your Delivery Address</span>
+                                                <div class="notify-date-time w-100 mt-2 text-end text-muted opacity-75">
+                                                    5 min ago
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="notification-wrap py-3 px-3 d-flex align-items-start">
+                                            <div class="notify-icon">
+                                                <span class="avatar rounded-pill w-100 d-flex align-items-center justify-content-center">
+                                                    <i class="demo-icon icon-tag"></i>
+                                                </span>
+                                            </div>
+                                            <div class="notify-text">
+                                                <p class="mb-0 fw-semibold">
+                                                    <a class="text-decoration-none text-dark" href="#">Your Order Has Been Shipped</a>
+                                                </p>
+                                                <span class="text-muted fw-normal fs-12 header-notification-text">Order No: 123456 Has Shipped To Your Delivery Address</span>
+                                                <div class="notify-date-time w-100 mt-2 text-end text-muted opacity-75">
+                                                    5 min ago
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="notification-wrap py-3 px-3 d-flex align-items-start">
+                                            <div class="notify-icon">
+                                                <span class="avatar rounded-pill w-100 d-flex align-items-center justify-content-center">
+                                                    <i class="demo-icon icon-tag"></i>
+                                                </span>
+                                            </div>
+                                            <div class="notify-text">
+                                                <p class="mb-0 fw-semibold">
+                                                    <a class="text-decoration-none text-dark" href="#">Your Order Has Been Shipped</a>
+                                                </p>
+                                                <span class="text-muted fw-normal fs-12 header-notification-text">Order No: 123456 Has Shipped To Your Delivery Address</span>
+                                                <div class="notify-date-time w-100 mt-2 text-end text-muted opacity-75">
+                                                    5 min ago
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    </ul>
+                                <div class="view-all-notify border-top p-3">
+                                    <a class="btn btn-primary atmosphere-btn rounded-1 w-100 text-uppercase text-md" href="#">View All</a>
+                                </div>
+                            </div>
+                              </div>
+                        </div>
+                        <div class="atmosphere-logged-user dropdown">
+                            <a href="#" class="atmosphere-account dropdown-toggle d-flex align-items-center" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <div class="profile-image">
+                                    <span><img src="images/john-cornors.jpg"></span>
+                                </div>
+                                <div class="atmosphere-username text-white">John Smith</div>
+                            </a>
+        
+                            <div class="dropdown-menu text-white">
+                                <div class="welcome-user">
+                                    <span class="d-block w-100">John Smith</span>
+                                    <small>Software Engineer</small>
+                                </div>
+                                <!-- /dropdown-user -->
+                                <div class="dropdown-nav">
+                                    <a class="dropdown-item" href="#"><span class="demo-icon icon-user"></span> Profile</a>
+                                    <a class="dropdown-item" href="#"><span class="demo-icon icon-mail"><img src="images/inbox.svg" alt=""></span> Inbox</a>
+                                    <a class="dropdown-item" href="#"><span class="demo-icon icon-lock"><img src="images/password.svg" alt=""></span> Reset Password</a>
+                                    <a class="dropdown-item" href="#"><span class="demo-icon icon-logout"><img src="images/logout-white.svg" alt=""></span> Logout</a>
+                                </div>
+                                <!-- /dropdown-nav -->
+                          </div>
+                          <!-- /dropdown-menu -->
+                        </div>
+                        <!-- /atmosphere-logged-user -->
+                    </div>
+                </div>
+                <!-- /header -->
+                <div class="content">
+                    <div class="page-title">
+                        <h4 class="fw-bold mb-4">Dashboard</h4>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="card border-0">
+                                <div class="card-header bg-white py-3">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <h5>Motivation and Energy Level Throughout the Day</h5>
+                                    </div>
+                                  </div>  
+                                   <!--/card-header  -->
+                                  <div class="card-body">
+                                    <div id="chart_div"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="card border-0">
+                                <div class="card-header bg-white py-3">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <h5>Daily Activities</h5>
+                                    </div>
+                                  </div>  
+                                   <!--/card-header  -->
+                                  <div class="card-body">
+                                    <div id="piechart_3d" style="width: 100%; height: 450px;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="card border-0 mt-4">
+                                <div class="card-header bg-white py-3">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <h5>Monthly Coffee Production by Country</h5>
+                                    </div>
+                                  </div>  
+                                   <!--/card-header  -->
+                                  <div class="card-body">
+                                    <div id="combo_chart" style="width: 100%; height: 450px;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="card border-0 mt-4">
+                                <div class="card-header bg-white py-3">
+                                    <h5>Earnings in First Two Weeks (<small class="text-muted fw-normal">in millions of dollars (USD)</small>)</h5>
+                                    
+                                  </div>  
+                                   <!--/card-header  -->
+                                  <div class="card-body">
+                                    <div id="linechart_material" style="width: 100%; height: 450px;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /row -->
+                </div>
+                <!-- /content -->
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".sidebar-toggle").click(function(){
+            $("body").toggleClass("sidebar-collepse");
+            var className = $('.sidebar-collepse').attr('class');
+            if (className=='sidebar-collepse') {
+                $('.nav-item').removeClass('show');
+                $('.dropdown-toggle').removeClass('show');
+                $('.dropdown-menu').removeClass('show');
+            }
+           // $('').removeClass('sidebar-collepse')
+            $("")
+        });
+    });
+    google.charts.load("current", {packages:["corechart"]});
+    google.charts.setOnLoadCallback(drawChart);
+    function drawChart() {
+      var data = google.visualization.arrayToDataTable([
+        ['Task', 'Hours per Day'],
+        ['Work',     11],
+        ['Eat',      2],
+        ['Commute',  2],
+        ['Watch TV', 2],
+        ['Sleep',    7]
+      ]);
+
+      var options = {
+        is3D: true,
+      };
+
+      var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+      chart.draw(data, options);
+    }
+</script>
+<script src="js/google-cart.js"></script>
+</html>

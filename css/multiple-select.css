@@ -1,0 +1,157 @@
+.ms-options-wrap,
+        .ms-options-wrap * {
+            box-sizing: border-box;
+        }
+
+        .ms-options-wrap > button:focus,
+        .ms-options-wrap > button {
+            position: relative;
+            width: 100%;
+            text-align: left;
+            padding: 5px 20px 5px 5px;
+            border: 0;
+            background-color: transparent;
+            margin-top: 1px;
+            font-size: 13px;
+            color: #aaa;
+            outline-offset: -2px;
+            white-space: nowrap;
+            
+        }
+
+        .ms-options-wrap > button > span {
+            display: inline-block;
+        }
+
+        .ms-options-wrap > button[disabled] {
+            background-color: #e5e9ed;
+            color: #808080;
+            opacity: 0.6;
+        }
+
+        .ms-options-wrap > button:after {
+            content: ' ';
+            position: absolute;
+            top: 14px;
+            right: 0;
+            width: 10px;
+            height: 6px;
+            background-image: url("../images/down-arrow.svg");
+            background-repeat: no-repeat;
+        }
+        .ms-options-wrap > button,
+        .ms-options-wrap.ms-has-selections > button,
+        .ms-options-wrap > button:focus,
+        .ms-options-wrap > button {
+            color: #212529;
+            font-size: 16px;
+            padding: 10px 15px;
+            border-radius: 0.25rem;
+            border: 1px #dee2e6 solid;
+        }
+        .saving-calculate-form .ms-options-wrap > button span{
+            font-family: 'Public Sans', sans-serif;
+            font-size: 16px;
+        }
+        .ms-options-wrap > .ms-options {
+            position: absolute;
+            left: 0;
+            width: 100%;
+            margin-top: 1px;
+            margin-bottom: 20px;
+            background: white;
+            z-index: 2000;
+            border: 1px #d0d0d0 solid;
+            overflow: auto;
+            visibility: hidden;
+        }
+
+        .ms-options-wrap.ms-active > .ms-options {
+            visibility: visible
+        }
+
+        .ms-options-wrap > .ms-options > .ms-search input {
+            width: 100%;
+            padding: 8px 15px;
+            border: none;
+            border-bottom: 1px #d0d0d0 solid;
+            outline: none;
+        }
+
+        .ms-options-wrap > .ms-options .ms-selectall {
+            display: inline-block;
+            font-size: .9em;
+            text-transform: lowercase;
+            text-decoration: none;
+        }
+        .ms-options-wrap > .ms-options .ms-selectall:hover {
+            text-decoration: underline;
+        }
+
+        .ms-options-wrap > .ms-options > .ms-selectall.global {
+            padding: 6px 15px;
+            font-family: 'Public Sans', sans-serif;
+            font-size: 16px;
+            color: #161616;
+            text-transform: capitalize;
+            text-decoration: none;
+        }
+        .ms-options-wrap > .ms-options > .ms-selectall.global:hover{
+            color: #3FBE7E;
+        }
+
+        .ms-options-wrap > .ms-options > ul,
+        .ms-options-wrap > .ms-options > ul > li.optgroup ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .ms-options-wrap > .ms-options > ul li.ms-hidden {
+            display: none;
+        }
+
+        .ms-options-wrap > .ms-options > ul > li.optgroup {
+            padding: 5px;
+        }
+        .ms-options-wrap > .ms-options > ul > li.optgroup + li.optgroup {
+            border-top: 1px solid #aaa;
+        }
+
+        .ms-options-wrap > .ms-options > ul > li.optgroup .label {
+            display: block;
+            padding: 5px 0 0 0;
+            font-weight: bold;
+        }
+
+        .ms-options-wrap > .ms-options > ul label {
+            position: relative;
+            display: inline-block;
+            width: 100%;
+            padding: 8px 15px 8px 42px;
+            margin: 1px 0;
+            font-family: 'Public Sans', sans-serif;
+        }
+        .ms-options-wrap > .ms-options > ul > li:not(:last-child){
+            border-bottom: 1px #d0d0d0 solid;
+        }
+        .ms-options-wrap > .ms-options.checkbox-autofit > ul label,
+        .ms-options-wrap > .ms-options.hide-checkbox > ul label {
+            padding: 4px;
+        }
+
+        .ms-options-wrap > .ms-options > ul input[type="checkbox"] {
+            margin: 0 5px 0 0;
+            position: absolute;
+            left: 15px;
+            top: 10px;
+        }
+
+        .ms-options-wrap > .ms-options.hide-checkbox > ul input[type="checkbox"] {
+            position: absolute !important;
+            height: 1px;
+            width: 1px;
+            overflow: hidden;
+            clip: rect(1px 1px 1px 1px);
+            clip: rect(1px, 1px, 1px, 1px);
+        }
